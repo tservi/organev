@@ -11,3 +11,26 @@
 *
 */
 
+// starting the session if it is not !
+
+function register_session_if_not_activated_before(){
+
+    if( !session_id() )
+
+        session_start();
+
+}
+
+add_action('init','register_session_if_not_activated_before');
+
+
+
+// loading the dashicons 
+
+add_action( 'wp_enqueue_scripts', 'load_dashicons' );
+
+function load_dashicons() {
+
+wp_enqueue_style( 'dashicons' );
+
+} 
