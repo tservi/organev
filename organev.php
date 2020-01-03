@@ -35,5 +35,24 @@ wp_enqueue_style( 'dashicons' );
 
 } 
 
+// action to perform at activation of the plugin
+
+function organev_setup_post_type() {
+    // register the "organev" custom post type
+    register_post_type( 'organev', ['public' => 'true'] );
+}
+add_action( 'init', 'organev_setup_post_type' );
+ 
+function organev_install() {
+    // trigger our function that registers the custom post type
+    organev_setup_post_type();
+ 
+    // clear the permalinks after the post type has been registered
+    flush_rewrite_rules();
+}
+register_activation_hook( __FILE__, 'organev_install' );
+
+// action to perform at deactivation of the plugin
+
 
 ?>
