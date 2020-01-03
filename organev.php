@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: Organev
-* Plugin URI: http://mon-blog.fr/plugins/ 
+* Plugin URI: http://www.t-servi.com/ 
 * Description: Ce plugin wordpress permet de créer des evénements
 * Version: 0.1 
 * Author: Jean Tinguely Awais aka t-servi.com 
