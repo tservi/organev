@@ -34,3 +34,6 @@ function load_dashicons() {
 wp_enqueue_style( 'dashicons' );
 
 } 
+
+
+?>
