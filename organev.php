@@ -54,5 +54,12 @@ register_activation_hook( __FILE__, 'organev_install' );
 
 // action to perform at deactivation of the plugin
 
+function organev_deactivation() {
+    // unregister the post type, so the rules are no longer in memory
+    unregister_post_type( 'organev' );
+    // clear the permalinks to remove our post type's rules from the database
+    flush_rewrite_rules();
+}
+register_deactivation_hook( __FILE__, 'organev_deactivation' );
 
 ?>
