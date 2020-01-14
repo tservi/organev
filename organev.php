@@ -72,9 +72,9 @@ function organev_admin_menu(){
   $page_title = 'WordPress Organev Admin Menu';   
   $menu_title = 'Organev';   
   $capability = 'manage_options';   
-  $menu_slug  = 'extra-post-info';   
-  $function   = 'extra_post_info_page';   
-  $icon_url   = 'dashicons-media-code';   
+  $menu_slug  = 'organev';   
+  $function   = 'organev_admin_page';   
+  $icon_url   = 'dashicons-buddicons-community';   
   $position   = 90;    
   add_menu_page( $page_title,$menu_title,$capability,$menu_slug,$function,$icon_url,$position ); 
 } 
