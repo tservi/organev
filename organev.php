@@ -62,7 +62,7 @@ function organev_deactivation() {
 }
 register_deactivation_hook( __FILE__, 'organev_deactivation' );
 
-?>
+
 
 
 // adding the admin menu 
@@ -78,3 +78,6 @@ function organev_admin_menu(){
   $position   = 4;    
   add_menu_page( $page_title,$menu_title,$capability,$menu_slug,$function,$icon_url,$position ); 
 } 
+
+
+?> // end of php
