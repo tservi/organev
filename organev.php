@@ -70,12 +70,12 @@ register_deactivation_hook( __FILE__, 'organev_deactivation' );
 add_action( 'admin_menu', 'organev_admin_menu' );  
 function organev_admin_menu(){    
   $page_title = 'WordPress Organev Admin Menu';   
-  $menu_title = 'Organve Administration';   
+  $menu_title = 'Organev';   
   $capability = 'manage_options';   
   $menu_slug  = 'extra-post-info';   
   $function   = 'extra_post_info_page';   
   $icon_url   = 'dashicons-media-code';   
-  $position   = 4;    
+  $position   = 90;    
   add_menu_page( $page_title,$menu_title,$capability,$menu_slug,$function,$icon_url,$position ); 
 } 
 
